@@ -149,3 +149,28 @@ body {
     70% { opacity: 1; transform: translate(-50%, -20px) scale(1); }
     100% { opacity: 0; transform: translate(-50%, -10px) scale(0.9); }
 }
+<style>
+  img {
+    max-width: 100%;    
+    height: auto;
+    display: block;       
+    margin: 0 auto;     
+  }
+
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .img-gallery img {
+    width: 200px;    
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .img-gallery img:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+  }
+</style>
