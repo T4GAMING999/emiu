@@ -20,5 +20,25 @@
   <audio id="tadabtn" src="./style/tada.mp3"></audio>
 
   <script src="./style/script.js"></script>
+  <style>
+  .img-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .img-gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .img-gallery img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+</style>
 </body>
 </html>
